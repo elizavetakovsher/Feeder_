@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background_schedule">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Выберите цвет"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:padding="16dp"/>
+
+    <SeekBar
+        android:id="@+id/hue_seekbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="255"
+        android:progress="20"
+        android:layout_margin="16dp"/>
+
+    <SeekBar
+        android:id="@+id/saturation_seekbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="100"
+        android:progress="10"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"/>
+
+    <SeekBar
+        android:id="@+id/value_seekbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="100"
+        android:progress="30"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"/>
+
+    <View
+        android:id="@+id/color_indicator"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_margin="16dp"/>
+
+
+    <Button
+        android:id="@+id/ok_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="OK"
+        android:paddingStart="32dp"
+        android:paddingEnd="32dp"
+        android:paddingTop="12dp"
+        android:paddingBottom="12dp"
+        android:layout_marginTop="16dp"/>
+
+    <ToggleButton
+        android:id="@+id/led_toggle_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textOn="Включено"
+        android:textOff="Выключено"
+        android:checked="false"
+        android:layout_gravity="center"
+        android:paddingStart="32dp"
+        android:paddingEnd="32dp"
+        android:paddingTop="12dp"
+        android:paddingBottom="12dp"
+        android:layout_marginTop="16dp"/>
+
+</LinearLayout>

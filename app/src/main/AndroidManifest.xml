@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.rubon.feeder">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+        android:name=".app_level.App"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_app_icon"
+        android:label="Feeder"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Feeder">
+        <activity
+            android:name=".screen.main.ScheduleActivity"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name=".screen.main.MainActivity">
+        </activity>
+        <activity
+            android:name=".screen.main.HomeActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".screen.main.HighlightActivity">
+        </activity>
+    </application>
+
+
+</manifest>
